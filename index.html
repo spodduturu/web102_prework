@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Sea Monster Crowdfunding</title>
   </head>
 
   <body>
     <!-- header row with logo -->
     <div class="header">
-        <img id="tentacles" src="assets/tentacles.png">
+        <img id="tentacles" src="assets/tentacles.png" alt="Sea Monster Logo">
         <h1 class="header-text">Sea Monster Crowdfunding</h1>
     </div>
 
@@ -24,26 +25,25 @@
     <div class="stats-container">
         <div class="stats-card">
             <h3>Individual Contributions</h3>
-            <p id="num-contributions">
-            </p>
+            <p id="num-contributions">15,000</p>
         </div>
         <div class="stats-card">
             <h3>Total Raised</h3>
-            <p id="total-raised">
-            </p>
+            <p id="total-raised">$1,200,000</p>
         </div>
         <div class="stats-card">
             <h3>Total Number of Games</h3>
-            <p id="num-games">
-            </p>
+            <p id="num-games">45</p>
         </div>
     </div>
     <div class="stats-container" id="top-games">
         <div class="stats-card" id="first-game">
             <h3>🥇 Top Funded Game</h3>
+            <p>Ocean Quest</p>
         </div>
         <div class="stats-card" id="second-game">
             <h3>🥈 Runner Up</h3>
+            <p>Deep Dive</p>
         </div>
     </div>
 
@@ -56,7 +56,27 @@
         <button id="all-btn">Show All Games</button>
     </div>
     <div id="games-container">
-
+        <!-- Placeholder game cards -->
+        <div class="game-card">
+            <img class="game-img" src="assets/game1.jpg" alt="Game 1">
+            <h3>Game Title 1</h3>
+            <p>Description of Game 1.</p>
+        </div>
+        <div class="game-card">
+            <img class="game-img" src="assets/game2.jpg" alt="Game 2">
+            <h3>Game Title 2</h3>
+            <p>Description of Game 2.</p>
+        </div>
+        <div class="game-card">
+            <img class="game-img" src="assets/game3.jpg" alt="Game 3">
+            <h3>Game Title 3</h3>
+            <p>Description of Game 3.</p>
+        </div>
+        <div class="game-card">
+            <img class="game-img" src="assets/game4.jpg" alt="Game 4">
+            <h3>Game Title 4</h3>
+            <p>Description of Game 4.</p>
+        </div>
     </div>
 
     <script type="module" src="index.js"></script>

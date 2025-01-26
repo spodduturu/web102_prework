@@ -10,17 +10,24 @@ body {
 }
 
 .header {
-    display: flex;
-    background-color: lightblue;
-    padding: 1%;
-    align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust number of columns based on screen size */
+    gap: 20px; /* Add space between the cards */
+    padding: 2%; /* Add padding to the container */
+    justify-items: center; /* Center align grid items */
 }
 
 .stats-container {
-    display: flex;
+    display: flex; /* Activates Flexbox layout */
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-around; /* Distributes items evenly with space around */
+    gap: 15px; /* Adds spacing between the items */
+    margin: 2% 0; /* Adds vertical spacing around the container */
+}
+
+.stats-container:hover {
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    box-shadow: 0 0 30px lightblue; /* Adds a light blue glow effect */
 }
 
 .stats-card {
@@ -44,6 +51,7 @@ body {
 
 .game-img {
     width: 100%;
+    heigh: auto;
     border-radius: 5px;
     box-shadow: 0 0 10px #FFFFFF;
 }
@@ -51,15 +59,17 @@ body {
 .game-card {
     background-color: #FFFFFF;
     padding: 1%;
-    margin: 1%;
-    width: 300px;
+    margin: 0; /* Remove margin (gap is controlled by grid) */
+    width: 100%; /* Make the card fit within its grid cell */
+    max-width: 300px; /* Ensure it doesn't exceed the maximum width */
     text-align: center;
     border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
 .game-card:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 20px lightblue;
 }
 
 #button-container {
